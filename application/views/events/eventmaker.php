@@ -266,6 +266,87 @@
 						</div>
 					</div>
 				</div>
+
+
+
+                <!-- UPDATE SCORES  -->
+                <form action="/score/update" method="POST" id="portlet-4" data-toggle="portlet" class="col-md-12">
+
+                    <div class="panel panel-primary">
+                        <div class="panel-heading portlet-handler">
+                            Update Score
+                        </div>
+                        <?= Form::hidden('event', $id_event) ?>;
+                        <div class="panel-wrapper collapse in">
+                            <div class="panel-body">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Этапы</label>
+                                        <div class="col-sm-10">
+                                            <select name="stage" class="form-control">
+                                                <?php for($i = 0; $i < count($stages); $i++) : ?>
+                                                    <option value="<?=$stages[$i]['id']; ?>"><?=$stages[$i]['name']; ?></option>
+                                                <?php endfor; ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Критерий</label>
+                                        <div class="col-sm-10">
+                                            <select name="criteria" class="form-control">
+                                                <?php for($i = 0; $i < count($criterias); $i++) : ?>
+                                                    <option value="<?=$criterias[$i][0]['id']; ?>"><?=$criterias[$i][0]['name']; ?></option>
+                                                <?php endfor; ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Жюри</label>
+                                        <div class="col-sm-10">
+                                            <select name="judge" class="form-control">
+                                                <?php for($i = 0; $i < count($judges); $i++) : ?>
+                                                    <option value="<?=$judges[$i]['id']; ?>"><?=$judges[$i]['name']; ?></option>
+                                                <?php endfor; ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Участники</label>
+                                        <div class="col-sm-10">
+                                            <select name="participant" class="form-control">
+                                                <?php for($i = 0; $i < count($participants_1); $i++) : ?>
+                                                    <option value="<?=$participants_1[$i]['id']; ?>"><?=$participants_1[$i]['name']; ?></option>
+                                                <?php endfor; ?>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label class="col-sm-2 control-label">Балл</label>
+                                        <div class="col-sm-10">
+                                            <input type="number" name="score" class="form-control">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <button class="btn btn-primary pull-right">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+
+
+
 			</div>
 		</div>
 	</div>

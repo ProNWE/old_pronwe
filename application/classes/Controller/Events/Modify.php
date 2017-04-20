@@ -112,4 +112,25 @@ class Controller_Events_Modify extends Controller {
 
         $this->redirect('/events/'. $id_event . '/edit' );
     }
+
+    public function action_update_score() {
+
+        $event       = Arr::get($_POST, 'event');
+        $stage       = Arr::get($_POST, 'stage');
+        $criteria    = Arr::get($_POST, 'criteria');
+        $judge       = Arr::get($_POST, 'judge');
+        $participant = Arr::get($_POST, 'participant');
+        $score       = Arr::get($_POST, 'score');
+
+        if (!($event && $stage && $criteria && $judge && $participant)) {
+            goto finish;
+        };
+
+        Model_Score::set($event, $participant, $stage, $criteria, $judge, $score);
+
+        finish:
+            $this->redirect($this->request->referrer());
+
+    }
+
 }
