@@ -186,6 +186,12 @@ ROUTE::set('EVENTMAKER', 'events/<id>/eventmaker')
         'action'     => 'eventmaker',
     ));
 
+ROUTE::set('UPDATE_SCORE', 'score/update')->
+    defaults(array(
+        'controller' => 'Events_Modify',
+        'action' => 'update_score'
+));
+
 
 /**
  * Judges
