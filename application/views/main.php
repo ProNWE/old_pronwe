@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="<?=$description; ?>">
     <meta name="keywords" content="<?=$keywords; ?>!">
-    <link rel="icon" href="<?=$assets; ?>img/favicon.png" type="image/png">
+    <link rel="icon" href="//votepad.ru/assets/img/favicon.png" type="image/png">
     <title><?=$title; ?></title>
 
     <!-- =============== VENDOR STYLES ===============-->
@@ -27,11 +27,11 @@
         <nav role="navigation" class="navbar topnavbar">
             <div class="navbar-header">
                 <a href="<?=URL::site('events/my'); ?>" class="navbar-brand">
-                    <div class="brand-logo">
-                        <img src="<?=$assets; ?>img/ProNWE_logo.svg" alt="App Logo" class="img-responsive">
+                    <div class="brand-logo" style="padding: 3px;">
+                        <img src="//votepad.ru/assets/img/favicon.png" alt="App Logo" class="img-responsive" style="height:50px">
                     </div>
                     <div class="brand-logo-collapsed">
-                        <img src="<?=$assets; ?>img/ProNWE_logo.svg" alt="Logo" class="img-responsive" style="padding-top: 15px">
+                        <img src="//votepad.ru/assets/img/favicon.png" alt="Logo" class="img-responsive" style="height:50px">
                     </div>
                 </a>
             </div>
@@ -64,69 +64,7 @@
                 </ul>
                 <!-- RIGHT NAVBAR -->
                 <ul class="nav navbar-nav navbar-right" style="margin-right:0px;">
-                    <!--
-                    <li>
-                        <a href="#" data-search-open="" title="Поиск">
-                            <em class="icon-magnifier"></em>
-                        </a>
-                    </li>
 
-                    
-                    <li class="dropdown dropdown-list">
-                        <a href="#" data-toggle="dropdown" aria-expanded="true" title="Уведомления">
-                            <em class="icon-bell"></em>
-                            <div class="label label-danger">35</div>
-                        </a>
-                        <ul class="dropdown-menu animated flipInX">
-                            <li>
-                                <div class="list-group">
-
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-box">
-                                            <div class="pull-left">
-                                                <em class="fa fa-thumbs-o-up fa-2x text-danger"></em>
-                                            </div>
-                                            <div class="media-box-body clearfix">
-                                                <p class="m0">Лайки</p>
-                                                <p class="m0 text-muted">
-                                                    <small>20 новых лайков</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-box">
-                                            <div class="pull-left">
-                                                <em class="fa fa-comments-o fa-2x text-warning"></em>
-                                            </div>
-                                            <div class="media-box-body clearfix">
-                                                <p class="m0">Отзывы</p>
-                                                <p class="m0 text-muted">
-                                                    <small>У Вам 10 непрочитанных отзывов</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-
-                                    <a href="#" class="list-group-item">
-                                        <div class="media-box">
-                                            <div class="pull-left">
-                                                <em class="fa fa-user-plus fa-2x text-info"></em>
-                                            </div>
-                                            <div class="media-box-body clearfix">
-                                                <p class="m0">Подписчики</p>
-                                                <p class="m0 text-muted">
-                                                    <small>5 новых подписчиков</small>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </li>
--->
                     
                     <li class="dropdown dropdown-list">
                         <a href="#" data-toggle="dropdown" title="Твиттер">
@@ -166,7 +104,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <span>&copy; 2016 - ProNWE</span>
+        <span>&copy;Votepad 2016-2017</span>
     </footer>
 </div>
 

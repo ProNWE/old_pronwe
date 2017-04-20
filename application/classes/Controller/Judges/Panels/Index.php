@@ -10,10 +10,6 @@ class Controller_Judges_Panels_Index extends Dispatch {
 
         $id_event = $this->request->param('id');
 
-        $this->template->title          = 'Выставление оценок участникам мероприятия | NWE';
-        $this->template->description    = '';
-        $this->template->keywords       = 'nwe, judgepanel';
-
         array_push( $this->js,  'vendor/jquery.steps/jquery.steps.js');
         array_push( $this->js,  'vendor/sweetalert/dist/sweetalert.min.js');
         array_push( $this->css, 'vendor/sweetalert/dist/sweetalert.css');
@@ -37,6 +33,11 @@ class Controller_Judges_Panels_Index extends Dispatch {
         $event = new Model_Events();
         $event = $event->getEvent($id_event);
 
+        $this->template->title          = $event['title'] . ' | Votepad';
+        $this->template->description    = $event['description'];
+        $this->template->keywords       = 'votepad, judgepanel';
+
+
         /**
          * Getting Events stages
          */
@@ -57,10 +58,6 @@ class Controller_Judges_Panels_Index extends Dispatch {
     public function action_panel2()
     {
         $id_event = $this->request->param('id');
-
-        $this->template->title          = 'Выставление оценок участникам мероприятия | NWE';
-        $this->template->description    = '';
-        $this->template->keywords       = 'nwe, judgepanel';
 
         array_push( $this->js,  'vendor/jquery.steps/jquery.steps.js');
         array_push( $this->js,  'vendor/sweetalert/dist/sweetalert.min.js');
@@ -85,6 +82,10 @@ class Controller_Judges_Panels_Index extends Dispatch {
          */
         $event = new Model_Events();
         $event = $event->getEvent($id_event);
+        
+        $this->template->title          = $event['title'] . ' | Votepad';
+        $this->template->description    = $event['description'];
+        $this->template->keywords       = 'votepad, judgepanel';
 
         /**
          * Getting Events stages

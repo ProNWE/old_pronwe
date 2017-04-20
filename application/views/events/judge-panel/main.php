@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="<?=$description; ?>">
     <meta name="keywords" content="<?=$keywords; ?>!">
-    <link rel="icon" href="<?=$assets; ?>img/favicon.png" type="image/png">
+    <link type="image/x-icon" rel="shortcut icon" href="//votepad.ru/assets/img/favicon.png" />
     <title><?=$title; ?></title>
 
     <!-- =============== VENDOR STYLES ===============-->

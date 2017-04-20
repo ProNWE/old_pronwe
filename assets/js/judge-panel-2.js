@@ -292,7 +292,7 @@ $( function ()
         {
             swal({
                 title: "Голосование закончилось",
-                text: "<p>Спасибо, что воспользовались нашей платформой</p><br><br><a href='//mister.pronwe.ru' class='pronwe_Link-small pronwe_color'>Результаты голосования</a>",
+                text: "<p>Спасибо, что воспользовались нашей платформой!</p><br><p>Результаты доступны на странице:</p><br> <p style='color: #1b72e2'>http://votepad.ru/miss2017</p><br><br><a href='/auth' class='pronwe_Link-small pronwe_color'>выход</a>",
                 html: true,
                 showCancelButton: false,
                 showConfirmButton: false,

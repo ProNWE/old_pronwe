@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
     <title>NWE | International Festival Of Social Entrepreneurship 2016</title>
-    <link type="image/x-icon" rel="shortcut icon" href="<?=URL::base(); ?>assets/ifse/imgs/favicon.png" />
+    <link type="image/x-icon" rel="shortcut icon" href="//votepad.ru/assets/img/favicon.png" />
 
     <link rel="stylesheet" href="<?=URL::base(); ?>assets/vendor/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=URL::base(); ?>assets//css/app_v1.css" media="screen">
@@ -10,6 +10,11 @@
     <script type="text/javascript" src="<?=URL::base(); ?>assets/vendor/jquery/dist/jquery.js"></script>
     <script src="/assets/frontend/production/voting.js"></script>
     <script type="text/javascript" src="<?=URL::base(); ?>assets/ifse/js/script.js"></script>
+
+    <script>
+        window.location.replace('//votepad.ru/#events');
+    </script>
+
 </head>
 
 <body>
