@@ -14,6 +14,7 @@ return array(
 		'old.votepad.ru',
         'old_pronwe',
         'oldpronwe',
+		'nwe.my',
 		// Set up your hostnames here
 		//
 		// Example:
