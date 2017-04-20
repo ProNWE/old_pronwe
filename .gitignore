@@ -1,2 +1,5 @@
-uploads
+.idea/*
+#uploads/*
 application/config/database.php
+.idea/vcs.xml
+system/config/url.php

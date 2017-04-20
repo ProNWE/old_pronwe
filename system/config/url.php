@@ -3,7 +3,6 @@
 return array(
 
 	'trusted_hosts' => array(
-		'localhost/dump_pronwe/public_html/',
 		'localhost',
 		'pronwe',
 		'pronwe.ru.swtest.ru',
@@ -13,6 +12,8 @@ return array(
 		'192.168.0.103',
 		'192.168.10.2',
 		'old.votepad.ru',
+        'old_pronwe',
+        'oldpronwe',
 		// Set up your hostnames here
 		//
 		// Example:
