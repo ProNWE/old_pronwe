@@ -292,12 +292,13 @@
                                     </div>
                                 </fieldset>
                                 <fieldset>
+
                                     <div class="form-group">
                                         <label class="col-sm-2 control-label">Критерий</label>
                                         <div class="col-sm-10">
                                             <select name="stage" class="form-control">
-                                                <?php for($i = 0; $i < count($stages); $i++) : ?>
-                                                    <option value="<?=$stages[$i]['id']; ?>"><?=$stages[$i]['name']; ?></option>
+                                                <?php for($i = 0; $i < count($criterias); $i++) : ?>
+                                                    <option value="<?=$criterias[$i][0]['id']; ?>"><?=$criterias[$i][0]['name']; ?></option>
                                                 <?php endfor; ?>
                                             </select>
                                         </div>
