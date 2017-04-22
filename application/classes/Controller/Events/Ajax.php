@@ -257,38 +257,6 @@ class Controller_Events_Ajax extends Ajax {
     	$this->response->body(@json_encode($new));
     }
 
-    public function action_getparticipants()
-    {
 
-        $id_event       = 9;
-        echo json_encode(Model_Participants::getall($id_event),true);
-
-    }
-
-    public function action_getparticipantsscore()
-    {
-
-        $id_participant = Arr::get($_POST, 'id_participant');
-        //echo json_encode(Model_Participants::getall($id_event),true);
-        //echo $id_participant;
-        echo json_encode(Model_Score::getScoreByParticipant($id_participant));
-
-    }
-
-    public function action_getjudgesonline(){
-
-        /**
-        * Getting Events Judges by id_event
-        */
-
-        $online = Model_Judge::JudgesOnline(9);
-
-        if (count($online) == 0) {
-            echo json_encode(1);            
-        } else{
-            echo json_encode(count($online));
-        }
-        
-    }
 
 }

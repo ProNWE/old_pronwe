@@ -536,10 +536,12 @@ console.log('rm' + rm);
             });
 
             swal("Порядок выступлений сохранен!","","success");
-        },
+        }
     });
 
-    $('.nav-s').sortable();
+    if ( $('.nav-s').length != 0 ) {
+        $('.nav-s').sortable();
+    }
     $('.portlets-wrapper ul li:first-child').addClass('active');
     $('.tab-content div:first-child').addClass('active');
     $('.buttons button:first-child').addClass('active');
